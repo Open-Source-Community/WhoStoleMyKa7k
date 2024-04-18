@@ -1,0 +1,51 @@
+-------------------------------------------------------------------------------------------------------------
+,--.                     ,--.                                                    
+|  |-.   ,--,--.  ,---.  |  ,---.                                                
+| .-. ' ' ,-.  | (  .-'  |  .-.  |                                               
+| `-' | \ '-'  | .-'  `) |  | |  |                                               
+ `---'   `--`--' `----'  `--' `--'                                               
+ ,---.  ,--,--,--.  ,---.  ,--.--.  ,---.   ,---.  ,--,--,   ,---. ,--. ,--.     
+| .-. : |        | | .-. : |  .--' | .-. | | .-. : |      \ | .--'  \  '  /      
+\   --. |  |  |  | \   --. |  |    ' '-' ' \   --. |  ||  | \ `--.   \   '       
+ `----' `--`--`--'  `----' `--'    .`-  /   `----' `--''--'  `---' .-'  /        
+,--.     ,--.   ,--.               `---'                           `---'         
+|  |,-.  `--' ,-'  '-.                                                           
+|     /  ,--. '-.  .-'                                                           
+|  \  \  |  |   |  |                                                             
+`--'`--' `--'   `--' 
+
+Bash is a shell, aka a program which allows you to interact with your system by running commands you enter.
+
+There are a lot of commands in bash, but you can make it through this game with just a handful of basic commands.
+
+-------------------------------------------------------------------------------------------------------------
+command		usage						example
+-------------------------------------------------------------------------------------------------------------
+ls		list contents of a directory			ls [dir]
+ls -a		list contents including hidden files		ls -a [dir]
+cd		change directory				cd dir_path
+~		home directory					cd ~/Downloads
+.		current directory				ls .
+..		previous directory				cd ..
+cat		display contents of a text file			cat file
+less		display text file in scrollable view		less file
+touch 		create a(n empty) file				touch file
+mkdir 		create a directory				mkdir dir
+cp		copy files or directories			cp file1 [file2...] destination_dir
+								cp file1 [file2...] destination_dir
+mv		move files or directories			mv file1 [file2...] destination_dir
+								mv dir1 [dir2...] destination_dir
+rm 		remove files					rm file1 [file2...]
+rm -r 		remove directories 				rm -r dir1 [dir2...]
+man		get help about any command			man rm
+-------------------------------------------------------------------------------------------------------------
+
+Work hard, you have a mission to accomplish!
+
+           /\__/\       __________________________
+          /      \      | I'll find you, my      |
+         /  > o < \    /| beloved ka7k!          |
+        (          )  / |________________________|
+	\ \ /  \ / /
+         \ v____v / 
+           W    W

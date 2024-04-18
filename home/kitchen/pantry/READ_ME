@@ -1,0 +1,31 @@
+-----------------------------------------------------------------
+You open your pantry. 
+
+No cookies are in sight, but you do spot a few expired items.
+
+Might as well throw them.
+
+           /\__/\       _________________________________
+          /      \      | I'm liking this cleaning      |
+         /  > u < \    /| spree!                        |
+        (          )  / |_______________________________|
+	\ \ /  \ / /
+         \ v____v / 
+           W    W 
+
+Maybe we'll come across the ka7k along the way!
+
+-----------------------------------------------------------------
+Y O U R    T A S K :
+
+- Check the items' expiry date, and toss expired items.
+
+- (Hint: display the files' content, then delete expired files)
+
+-----------------------------------------------------------------
+C H E C K :
+
+- After finishing, run check to make sure everything is done.
+- Just to double check, show ALL items (and I mean all!)
+- (Hint: use ls with a certain option) 
+-----------------------------------------------------------------
