@@ -1,21 +1,21 @@
 #!/bin/bash
 echo "-----------------------------------------------------------------"
 
-files=("./kitchen/cheese" "./kitchen/chocolate")
+files=("./cheese" "./chocolate")
 
-found=yes
+cleared=yes
 
 for filename in "${files[@]}"
 do
-  if [[ ! -f "$filename" ]]; then
-          found=no
+  if [[ -f "$filename" ]]; then
+          cleared="no"
 	  echo "You forgot to throw $( basename $filename )!"
   fi
 done
-if [[ $found == "no" ]]; then
-  echo "throw all expired items and try again..."
+if [[ $cleared == "no" ]]; then
+  echo "Throw all expired items and try again..."
 else
-  echo "Well done! All expired items are throw"
+  echo "Well done! You can now eat worry-free.."
 
 fi
 
