@@ -1,3 +1,1 @@
 less "../../../.assets/.ending"
-
-ig
