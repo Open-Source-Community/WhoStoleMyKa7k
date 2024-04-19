@@ -21,6 +21,7 @@ There are a lot of commands in bash, but you can make it through this game with 
 -------------------------------------------------------------------------------------------------------------
 command		usage						example
 -------------------------------------------------------------------------------------------------------------
+./[scriptname]	run a bash script				./check.sh
 ls		list contents of a directory			ls [dir]
 ls -a		list contents including hidden files		ls -a [dir]
 cd		change directory				cd dir_path
