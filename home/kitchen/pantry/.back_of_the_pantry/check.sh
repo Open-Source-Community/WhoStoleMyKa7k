@@ -35,10 +35,10 @@ fi
 
 if [[ $cleared == false ]]; then
     echo "Finish the remaining tasks and try again..."
-    return
+    exit
 fi
 echo "Well done!"
-cat "../../../.assets/.rat_thank_you"
+cat "../../../../.assets/.rat_thank_you"
 echo ""
 read -p "Ready to enjoy your kahk? [Press any key to continue]" $choice
-bash "../../../.assets/.ending_script.sh"
+less "../../../../.assets/.ending"

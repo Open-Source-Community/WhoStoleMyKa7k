@@ -31,5 +31,5 @@ if [[ $c1 == false || $c2 == false ]]; then
 else
   echo "Well done!"
   rm "../living_room/vase/READ_ME"
-  cp "../.assets/.new_vase_file" "../living_room/vase/READ_ME"
+  cp "../../.assets/.new_vase_file" "../living_room/vase/READ_ME"
 fi
