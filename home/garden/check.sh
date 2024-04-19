@@ -1,7 +1,27 @@
-# check if there is still 5 flowers in the garden
-# and check if there is at least one flower in the vase
-# if correct, replace the vase file content with this 
------------------------------------------------------------------
+#!/bin/bash
+echo "-----------------------------------------------------------------"
+
+flowers=("./garden")
+folwersinvase=$(ls -A "./linving_room/vase"| wc -l)
+c1=false
+c2=false
+no_flower=$(ls -A $flowers | wc -l)
+
+if [[ $no_flower -le 5 ]];
+then
+  c1=true
+  echo "You accidentally kill a flower, plant another one in its place"
+else 
+  echo "Your garden is amazing!"
+fi
+if [[ $folwersinvase == 0 ]];
+then
+  c1=true
+  echo "put some flowers in vasa"
+else 
+  echo "Your vase looks beautifull!"
+fi
+
 What a beautiful vase of flowers!
        , .-.-,_,
       )`-.>'` (
@@ -34,7 +54,3 @@ What a beautiful vase of flowers!
     ':::..      .'
      `""-----""`
 [art by: joan stark]
------------------------------------------------------------------
-
-# else
-# display error message depending on the failing condition
