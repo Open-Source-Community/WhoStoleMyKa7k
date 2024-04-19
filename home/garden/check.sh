@@ -1,56 +1,35 @@
 #!/bin/bash
+
 echo "-----------------------------------------------------------------"
 
-flowers=("./garden")
-folwersinvase=$(ls -A "./linving_room/vase"| wc -l)
-c1=false
-c2=false
-no_flower=$(ls -A $flowers | wc -l)
+flowers=$(ls . | wc -l)
+flowers=$((flowers - 2))
+echo $flowers
+flowersinvase=$(ls "../living_room/vase" | wc -l)
+flowersinvase=$((flowersinvase - 1))
 
-if [[ $no_flower -le 5 ]];
-then
+#condition 1
+if [[ $flowers -lt 5 ]]; then
+  c1=false
+  echo "You accidentally killed a flower! Plant another one in its place."
+else
+  echo "Your garden looks amazing!"
   c1=true
-  echo "You accidentally kill a flower, plant another one in its place"
-else 
-  echo "Your garden is amazing!"
 fi
-if [[ $folwersinvase == 0 ]];
-then
-  c1=true
-  echo "put some flowers in vasa"
-else 
+
+#condition 2
+if [[ $flowersinvase == 0 ]]; then
+  c2=false
+  echo "You might want to copy some flowers to the vase."
+else
   echo "Your vase looks beautifull!"
+  c2=true
 fi
 
-What a beautiful vase of flowers!
-       , .-.-,_,
-      )`-.>'` (
-     /     `\  |
-     |       | |
-      \     / /
-      `=(\ /.=`
-       `-;`.-' 
-         `)|     ,
-          ||  .-'|
-        ,_||  \_,/
-  ,      \|| .'
-  |\|\  , ||/
- ,_\` |/| |Y_,
-  '-.'-._\||/
-     >_.-`Y|
-     ` .-"||"-.
-       \'----'/
-        |:.  |
-        |::. |
-       /::::  \
-     .:::'     '.
-    /:::         \
-   ;:::'          ;
-   |:::           |
-   |:::           |
-   |:::           |
-   ;:::           ;
-   \:::.          /
-    ':::..      .'
-     `""-----""`
-[art by: joan stark]
+if [[ $c1 == false || $c2 == false ]]; then
+  echo "Finish the remaining tasks and try again..."
+else
+  echo "Well done!"
+  rm "../living_room/vase/READ_ME"
+  cp "../.assets/.new_vase_file" "../living_room/vase/READ_ME"
+fi
