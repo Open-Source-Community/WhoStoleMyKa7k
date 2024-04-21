@@ -1,12 +1,12 @@
-# Who Ate My Ka7k?
-
-# Story:
+# Who Stole My Ka7k?
 
 You buy a box of ka7k on Eid night and wait patiently for morning to eat them. Unfortunately, you wake up to find them all gone.
 
 You are on a mission to find your ka7k, while learning some handy bash commands along the way.
 
-# How to play:
+# FAQ
+
+## How can I play?
 
 - Clone this repo.
 
@@ -28,25 +28,36 @@ You are on a mission to find your ka7k, while learning some handy bash commands 
 
   Note: the `cheat` command will not work in zsh.
 
+- Go to the directory (folder) named _home_ in the game
+
 - Explore the game folders and files with your newly equipped commands!
 
-# Rooms:
+- If you are stuck, type cheat into the terminal and hit enter (from anywhere within the game folder!).
 
-- living room
-- kitchen
-- bedroom
-- garden
+## How many rooms/areas are there for me to explore?
 
-# Covered commands:
+Currently, there are 4.
 
-- cd
-- ls (-a)
-- mv
-- cat
-- less
-- rm (-r)
-- mkdir
-- touch
+- Living room
+- Kitchen
+- Bedroom
+- Garden
+
+## What commands will I learn?
+
+- `cd`
+- `ls [-a]`
+- `mv`
+- `cp [-r]`
+- `cat`
+- `less`
+- `rm [-r]`
+- `mkdir`
+- `touch`
+
+## Can I contribute?
+
+Absolutely! Check out contribution guidelines [here](CONTRIBUTING.md).
 
 # Credits
 
